@@ -51,6 +51,15 @@ a:hover .image{
     .image{
         width: 90%;
     }
+    a:hover .image{
+        width: 90%;
+    }
+    a:active .image{
+        width: 90%;
+    }
+    a:visited .image{
+        width: 90%;
+    }
 }
 span a{
     text-decoration: none;
