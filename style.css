@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header{
+    background-color: black;
+    grid-column: 1/-1;
+    text-align: right;
+}
+li{
+    display: inline-block;
+    padding: 20px;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+}
+li a:hover{
+    font-size: 20px;
+    color: pink;
+}
+li a:active{
+    font-size: 20px;
+    color: red;
+}
+body{
+    background-color: cadetblue;
+}
+.para{
+    grid-column: 1/-1;
+    text-align: center;
+}
+@media screen and (max-width: 888px) {
+    .header{
+        text-align: center;
+    }
+}
