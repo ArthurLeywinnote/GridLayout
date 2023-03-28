@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Fira Code', 'JetBrains Mono', monospace, cursive;
 }
 main{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
 }
 .header{
     background-color: black;
@@ -35,8 +37,32 @@ body{
     grid-column: 1/-1;
     text-align: center;
 }
+.image{
+    width: 30vw;
+    margin: 0px 20px;
+}
+a:hover .image{
+    width: 32vw;
+}
 @media screen and (max-width: 888px) {
     .header{
         text-align: center;
     }
+}
+span a{
+    text-decoration: none;
+}
+span a:hover{
+    color: pink;
+    font-size: 20px;
+}
+span a:active{
+    color: red;
+    font-size: 20px;
+}
+.footer{
+    background-color: black;
+    grid-column: 1/-1;
+    padding: 20px;
+    text-align: center;
 }
