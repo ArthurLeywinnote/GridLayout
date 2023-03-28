@@ -4,7 +4,7 @@
     color: white;
     font-family: 'Fira Code', 'JetBrains Mono', monospace, cursive;
 }
-main{
+main{ 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 20px;
@@ -47,6 +47,9 @@ a:hover .image{
 @media screen and (max-width: 888px) {
     .header{
         text-align: center;
+    }
+    .image{
+        width: 90%;
     }
 }
 span a{
